@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="../css/cap-1.css">
+</head>
+<body>
+
+    <h1>Cap  2 </h1>
+    <div>
+        <img class="contenedor" src="../assets/multimedia/escenario2.png" alt="">
+    <p>Haz clic en el botón para mostrar una viñeta de texto.</p>
+    <button class="button" onclick="mostrarViñeta()">Mostrar Viñeta</button>
+
+    <ul id="viñeta" class="viñeta">
+        <li>un dia, entontraron un cofre misterioso.</li>
+
+    </ul>
+    </div>
+    
+
+
+</div>
+<div class="navigation">
+    <a href="./capitulo1.html" class="button left">⬅ Anterior</a>
+    <a href=".//capitulo3.html" class="button right">Siguiente ➡</a>
+</div>
+    
+
+
+    <h1 id="num">0</h1>
+    <button id="btnAdd">add</button>
+    
+
+    
+    <script src="../js/capitulo1.js"></script>
+    <script> function mostrarViñeta() {
+        var viñeta = document.getElementById("viñeta");
+        viñeta.classList.toggle("visible"); // Cambia la visibilidad al agregar o quitar la clase "visible"
+    }</script>
+</body>
+</html>
